@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery || Callback</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <button id="getText" >Get Text</button>
+    <button id="getTextAndHtml" >GetText With HTML</button>
+    <button id="getInputText" >Get Input value</button>
+    <div class="para" id="para">
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum adipisci beatae enim fuga blanditiis, accusantium ducimus voluptatum? Nobis cupiditate molestiae illo tempore quisquam dolor ratione fuga, magni impedit unde laborum.</p>
+        </div>
+    </div>
+    <input type="text" class="inputVal" placeholder="Enter something">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#getText").click(function(){
+                alert("This text is" + $(".text").text() );
+            });
+            $("#getTextAndHtml").click(function(){
+                alert("This HTML is:" + $(".text").html());
+            });
+            $("#getInputText").click(function(){
+                alert("This Input value is:" + $(".inputVal").val());
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
